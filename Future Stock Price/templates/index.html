@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>📈 Stock Price Prediction</h1>
+
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+
+        <form method="POST">
+            <label for="ticker">Enter Stock Ticker Symbol:</label>
+            <input type="text" id="ticker" name="ticker" placeholder="e.g., AAPL, MSFT, GOOGL" list="suggestions" required>
+            <datalist id="suggestions">
+                {% for suggestion in ticker_suggestions %}
+                    <option value="{{ suggestion }}">
+                {% endfor %}
+            </datalist>
+
+            <label for="model">Choose Model:</label>
+            <select id="model" name="model">
+                <option>Linear Regression</option>
+                <option>Random Forest</option>
+            </select>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if result %}
+            <h2>Result:</h2>
+            <p>{{ result }}</p>
+        {% endif %}
+
+        {% if plot_url %}
+            <h3>📊 Actual vs Predicted Price:</h3>
+            <img src="{{ url_for('static', filename='plot.png') }}" alt="Prediction Plot">
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+/* Animated Gradient Background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff6ec4, #7873f5, #00c6ff, #fcb045);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #f0f0f0;
+    overflow-x: hidden;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Vibrant Container - No White! */
+.container {
+    background: rgba(20, 20, 60, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    max-width: 700px;
+    width: 90%;
+    padding: 40px 30px;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffdd57;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #a6e1fa;
+}
+
+/* Neon Glass Input Fields */
+input, select {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 2px solid #00f7ff;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 1em;
+    margin-top: 5px;
+    transition: all 0.3s;
+}
+
+input::placeholder {
+    color: #cccccc;
+}
+
+input:focus, select:focus {
+    border-color: #ff6ec4;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px #ff6ec4;
+    outline: none;
+}
+
+/* Gradient Glow Button */
+button {
+    background: linear-gradient(45deg, #ff6ec4, #7873f5, #00c6ff);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 25px;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(255,110,196,0.7);
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(255,110,196,1);
+    background: linear-gradient(45deg, #00f7ff, #00c6ff, #7873f5);
+}
+
+.error {
+    background: rgba(255, 50, 50, 0.15);
+    color: #ff4d4d;
+    border: 1px solid #ff8080;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-in;
+}
+
+h2, h3 {
+    margin-top: 20px;
+    color: #00f7ff;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+}
+
+p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #e0e0e0;
+}
+
+img {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
