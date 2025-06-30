@@ -1,6 +1,53 @@
-**# AI-ML-Intership-Tasks**
+# AI-ML-Intership-Tasks
 
-**# Task 02**
+# Task 01
+
+# Iris Dataset Exploration and Visualization
+
+##  Task Objective
+
+The goal of this task is to **explore and visualize the Iris dataset** using Python libraries such as `pandas`, `seaborn`, and `matplotlib`. This task emphasizes data understanding through descriptive statistics and visual interpretation, rather than machine learning.
+
+##  Dataset Used
+
+- **Dataset**: Iris Dataset  
+- **Source**: Built-in dataset available via the `seaborn` library or as a CSV file  
+- **Description**: The dataset contains 150 records of iris flowers with 4 numeric features (sepal length, sepal width, petal length, petal width) and a target label (species).
+
+##  Models Applied
+
+**No machine learning models** were applied in this task.  
+The focus is on **exploratory data analysis (EDA)** and basic data visualization.
+
+## Key Results and Findings
+
+- **Data Overview**:
+  - Dataset shape: `(150, 5)`
+  - No missing values found.
+  - Three distinct species: `setosa`, `versicolor`, `virginica`.
+
+- **Visualizations**:
+  - **Scatter plots** revealed clear feature separation, especially between petal dimensions.
+  - **Histograms** showed normal distribution for most features, with some skewness.
+  - **Box plots** helped detect mild outliers, especially in `sepal width`.
+
+- **Insights**:
+  - Petal length and width are the most discriminative features for classifying species.
+  - `Setosa` species are distinctly separated from the other two.
+
+##  Files
+
+- `Iris_notebook.ipynb` – Jupyter notebook containing all the code, visualizations, and analysis.
+
+## Skills Practiced
+
+- Data loading and inspection using `pandas`
+- Summary statistics and data exploration
+- Visual analysis using `matplotlib` and `seaborn`
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Task 02**
 
 **📈 Stock Price Prediction Web App (Short-Term Forecasting)**
 
@@ -60,6 +107,9 @@ Both models are implemented using scikit-learn.
 - Finding	Including features like Open, High, Low, and Volume helps in capturing stock movement patterns for short-term prediction. However, stock market data is inherently noisy, so model performance varies per stock.
 
 **Screenshots**
+![image](https://github.com/user-attachments/assets/8371fc0f-e0b1-4eb8-944b-af72ed2638bc)
+![image](https://github.com/user-attachments/assets/82e4f02f-2507-440f-bd3d-ef73077369b2)
+
 
 
 **Technologies Used**
@@ -71,8 +121,8 @@ Both models are implemented using scikit-learn.
 - scikit-learn
 - matplotlib
 - HTML5 / CSS3 (Responsive, Gradient, Animated)
-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Task 03**
 
