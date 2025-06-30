@@ -1,16 +1,19 @@
 **# AI-ML-Intership-Tasks**
+
 **# Task 02**
+
 **📈 Stock Price Prediction Web App (Short-Term Forecasting)**
-A Flask-based web application that uses historical stock market data from Yahoo Finance to predict the next day's closing price for any given stock ticker (e.g., Apple, Tesla).
+
+- A Flask-based web application that uses historical stock market data from Yahoo Finance to predict the next day's closing price for any given stock ticker (e.g., Apple, Tesla).
 This project demonstrates time series handling, regression modeling, and data visualization.
 
-**✅ Task Objective**
+**Task Objective**
 - Build a machine learning model to predict the next day's closing stock price based on historical data.
 - Allow users to select stock ticker symbols (like AAPL, TSLA, GOOGL) and choose between Linear Regression and Random Forest models.
 - Provide an interactive web interface for input and result visualization.
 - Display Actual vs Predicted stock prices for test data.
 
-**✅ Dataset Used**
+**Dataset Used**
 Source: Yahoo Finance
 Library Used for Data Retrieval: yfinance
 Data Fields Used:
@@ -20,7 +23,7 @@ Data Fields Used:
 - Volume
 - Close (as target: next day’s close)
 
-**✅ Features and Workflow**
+**Features and Workflow**
 **User Input:**
 - Stock ticker symbol (e.g., AAPL, MSFT, TSLA)
 - Model choice (Linear Regression or Random Forest)
@@ -42,23 +45,24 @@ Data Fields Used:
 -- Gradient backgrounds, glassmorphism, glowing buttons
 -- Error messages styled in soft red overlays
 
-**✅ Models Applied**
+**Models Applied**
 - Linear Regression
 - Random Forest Regressor
 Both models are implemented using scikit-learn.
 
-**✅ Key Results and Findings**
+**Key Results and Findings**
 **Metric**	**Result**
 **Prediction Goal**	Next day's closing price
 **Evaluation Metric**	R² Score
-Visualization	Actual vs Predicted Close Price Graph
-**Test Results**	Models typically achieved R² Scores ranging between 0.6 - 0.9 depending on stock and time period. Random Forest often performed better on noisy stocks.
-Finding	Including features like Open, High, Low, and Volume helps in capturing stock movement patterns for short-term prediction. However, stock market data is inherently noisy, so model performance varies per stock.
+- Visualization	Actual vs Predicted Close Price Graph
+**Test Results**
+- Models typically achieved R² Scores ranging between 0.6 - 0.9 depending on stock and time period. Random Forest often performed better on noisy stocks.
+- Finding	Including features like Open, High, Low, and Volume helps in capturing stock movement patterns for short-term prediction. However, stock market data is inherently noisy, so model performance varies per stock.
 
-**✅ Screenshots**
+**Screenshots**
 
 
-**✅ Technologies Used**
+**Technologies Used**
 - Python
 - Flask
 - yfinance
@@ -71,19 +75,21 @@ Finding	Including features like Open, High, Low, and Volume helps in capturing s
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Task 03**
-  **❤️ Heart Disease Prediction Web App**
+
+**Heart Disease Prediction Web App**
+
 A Flask-based web application that predicts whether a patient is at risk of heart disease based on their health data.
 This project applies machine learning classification models on a cleaned Heart Disease UCI dataset with a user-friendly interactive web interface.
 
-**✅ Task Objective**
-Build a heart disease prediction system using supervised machine learning.
-Allow users to input patient health details via a web form.
-Train models to predict heart disease presence (Yes/No).
-Provide model evaluation results and visualizations (like feature importance charts).
+**Task Objective**
+- Build a heart disease prediction system using supervised machine learning.
+- Allow users to input patient health details via a web form.
+- Train models to predict heart disease presence (Yes/No).
+- Provide model evaluation results and visualizations (like feature importance charts).
 
-**✅ Dataset Used**
-Dataset: Heart Disease UCI Dataset
-Source: Kaggle - Heart Disease UCI Dataset
+**Dataset Used**
+- Dataset: Heart Disease UCI Dataset
+- Source: Kaggle - Heart Disease UCI Dataset
 
 **Features Used:**
 - Age
@@ -100,37 +106,37 @@ Source: Kaggle - Heart Disease UCI Dataset
 - Number of major vessels (ca)
 - Thalassemia (thal)
 **Target Variable:**
-Presence of Heart Disease (Binary classification: 1 = Disease, 0 = No Disease)
+ Presence of Heart Disease (Binary classification: 1 = Disease, 0 = No Disease)
 
-**✅ Models Applied**
-Logistic Regression
-Decision Tree Classifier
+**Models Applied**
+- Logistic Regression
+- Decision Tree Classifier
 Both models are implemented using scikit-learn (sklearn).
 
-**✅ Features & Workflow**
-**💡 Web App Flow:**
+**Features & Workflow**
+**Web App Flow:**
 **User Input:**
-Web form collects patient health details (age, cholesterol, blood pressure, etc).
+ Web form collects patient health details (age, cholesterol, blood pressure, etc).
 
 **Model Prediction:**
-User submits form → Data fed into ML model → Returns heart disease prediction.
+ User submits form → Data fed into ML model → Returns heart disease prediction.
 
 **Model Evaluation:**
-Accuracy, Confusion Matrix, and Feature Importance calculated and shown.
+ Accuracy, Confusion Matrix, and Feature Importance calculated and shown.
 
 **Visualization:**
-Bar chart showing top important features influencing the prediction.
+ Bar chart showing top important features influencing the prediction.
 
 **Styling:**
-Responsive, colorful frontend with improved CSS.
+ Responsive, colorful frontend with improved CSS.
 
-**✅ Key Results and Findings**
-Metric	Logistic Regression	Decision Tree
-Accuracy (on Test Set)	~82%	~79%
-Best Features	Cholesterol, Age, Max Heart Rate, ST Depression	Similar but decision tree more flexible
-Observations	Logistic Regression gives stable results, Decision Tree captures non-linearities	
+**Key Results and Findings**
+ Metric	Logistic Regression	Decision Tree
+ Accuracy (on Test Set)	~82%	~79%
+ Best Features	Cholesterol, Age, Max Heart Rate, ST Depression	Similar but decision tree more flexible
+ Observations	Logistic Regression gives stable results, Decision Tree captures non-linearities	
 
-**✅ Technologies Used**
+**Technologies Used**
 - Python
 - Flask
 - scikit-learn
@@ -139,7 +145,7 @@ Observations	Logistic Regression gives stable results, Decision Tree captures no
 - matplotlib / seaborn
 - HTML5 / CSS3 (with styling for better user experience)
 
-**✅ Installation Instructions**
+**Installation Instructions**
 **Clone the repository:**
 
 bash
@@ -163,10 +169,13 @@ cpp
 Copy
 Edit
 http://127.0.0.1:5000/
-**✅ Screenshots **
+**Screenshots**
+![image](https://github.com/user-attachments/assets/1b10d01b-5f3f-400e-a564-07df14a71a3e)
+![image](https://github.com/user-attachments/assets/46133e59-4278-437a-831f-21971c8991c4)
 
 
-**✅ Folder Structure:**
+
+**Folder Structure:**
 cpp
 Copy
 Edit
