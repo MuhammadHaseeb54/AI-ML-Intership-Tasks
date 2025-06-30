@@ -1,10 +1,10 @@
-# AI-ML-Intership-Tasks
-# Task 01
-📈 Stock Price Prediction Web App (Short-Term Forecasting)
+**# AI-ML-Intership-Tasks**
+**# Task 02**
+**📈 Stock Price Prediction Web App (Short-Term Forecasting)**
 A Flask-based web application that uses historical stock market data from Yahoo Finance to predict the next day's closing price for any given stock ticker (e.g., Apple, Tesla).
 This project demonstrates time series handling, regression modeling, and data visualization.
 
-✅ Task Objective
+**✅ Task Objective**
 - Build a machine learning model to predict the next day's closing stock price based on historical data.
 - Allow users to select stock ticker symbols (like AAPL, TSLA, GOOGL) and choose between Linear Regression and Random Forest models.
 - Provide an interactive web interface for input and result visualization.
@@ -56,7 +56,7 @@ Visualization	Actual vs Predicted Close Price Graph
 Finding	Including features like Open, High, Low, and Volume helps in capturing stock movement patterns for short-term prediction. However, stock market data is inherently noisy, so model performance varies per stock.
 
 **✅ Screenshots**
-(Add screenshots of your app UI and Actual vs Predicted plot here if needed)
+
 
 **✅ Technologies Used**
 - Python
@@ -67,3 +67,115 @@ Finding	Including features like Open, High, Low, and Volume helps in capturing s
 - scikit-learn
 - matplotlib
 - HTML5 / CSS3 (Responsive, Gradient, Animated)
+- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Task 03**
+  **❤️ Heart Disease Prediction Web App**
+A Flask-based web application that predicts whether a patient is at risk of heart disease based on their health data.
+This project applies machine learning classification models on a cleaned Heart Disease UCI dataset with a user-friendly interactive web interface.
+
+**✅ Task Objective**
+Build a heart disease prediction system using supervised machine learning.
+Allow users to input patient health details via a web form.
+Train models to predict heart disease presence (Yes/No).
+Provide model evaluation results and visualizations (like feature importance charts).
+
+**✅ Dataset Used**
+Dataset: Heart Disease UCI Dataset
+Source: Kaggle - Heart Disease UCI Dataset
+
+**Features Used:**
+- Age
+- Sex
+- Chest Pain Type (cp)
+- Resting Blood Pressure (trestbps)
+- Cholesterol (chol)
+- Fasting Blood Sugar (fbs)
+- Resting ECG Results (restecg)
+- Maximum Heart Rate (thalach)
+- Exercise Induced Angina (exang)
+- ST Depression (oldpeak)
+- Slope of ST segment (slope)
+- Number of major vessels (ca)
+- Thalassemia (thal)
+**Target Variable:**
+Presence of Heart Disease (Binary classification: 1 = Disease, 0 = No Disease)
+
+**✅ Models Applied**
+Logistic Regression
+Decision Tree Classifier
+Both models are implemented using scikit-learn (sklearn).
+
+**✅ Features & Workflow**
+**💡 Web App Flow:**
+**User Input:**
+Web form collects patient health details (age, cholesterol, blood pressure, etc).
+
+**Model Prediction:**
+User submits form → Data fed into ML model → Returns heart disease prediction.
+
+**Model Evaluation:**
+Accuracy, Confusion Matrix, and Feature Importance calculated and shown.
+
+**Visualization:**
+Bar chart showing top important features influencing the prediction.
+
+**Styling:**
+Responsive, colorful frontend with improved CSS.
+
+**✅ Key Results and Findings**
+Metric	Logistic Regression	Decision Tree
+Accuracy (on Test Set)	~82%	~79%
+Best Features	Cholesterol, Age, Max Heart Rate, ST Depression	Similar but decision tree more flexible
+Observations	Logistic Regression gives stable results, Decision Tree captures non-linearities	
+
+**✅ Technologies Used**
+- Python
+- Flask
+- scikit-learn
+- pandas
+- numpy
+- matplotlib / seaborn
+- HTML5 / CSS3 (with styling for better user experience)
+
+**✅ Installation Instructions**
+**Clone the repository:**
+
+bash
+Copy
+Edit
+git clone 
+cd heart-disease-prediction-app
+**Install dependencies:**
+
+bash
+Copy
+Edit
+
+**Run the Flask app:**
+bash
+Copy
+Edit
+python app.py
+**Open in browser:**
+cpp
+Copy
+Edit
+http://127.0.0.1:5000/
+**✅ Screenshots **
+
+
+**✅ Folder Structure:**
+cpp
+Copy
+Edit
+heart-disease-prediction/
+├── app.py
+├── templates/
+│   └── index.html
+├── static/
+│   └── style.css
+├── heart_cleveland_upload.csv
+└── README.md
+
