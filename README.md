@@ -49,7 +49,7 @@ The focus is on **exploratory data analysis (EDA)** and basic data visualization
 
 # Task 02
 
-#📈 Stock Price Prediction Web App (Short-Term Forecasting)
+# Stock Price Prediction Web App (Short-Term Forecasting)
 
 - A Flask-based web application that uses historical stock market data from Yahoo Finance to predict the next day's closing price for any given stock ticker (e.g., Apple, Tesla).
 This project demonstrates time series handling, regression modeling, and data visualization.
