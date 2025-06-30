@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <div class="result-box">
+        <h2>Prediction Result:</h2>
+
+        {% if "High Risk" in result %}
+            <p class="high-risk">{{ result }}</p>
+            <div class="suggestion">
+                <p><strong>Health Tips:</strong></p>
+                <ul style="text-align: left;">
+                    <li>Consult a cardiologist immediately.</li>
+                    <li>Consider lifestyle changes like exercise and diet control.</li>
+                    <li>Stop smoking and reduce stress levels.</li>
+                    <li>Monitor blood pressure, cholesterol, and sugar levels regularly.</li>
+                </ul>
+            </div>
+        {% else %}
+            <p class="low-risk">{{ result }}</p>
+            <div class="suggestion">
+                <p><strong>Tips to Maintain Heart Health:</strong></p>
+                <ul style="text-align: left;">
+                    <li>Continue regular exercise and healthy diet.</li>
+                    <li>Have routine heart check-ups.</li>
+                    <li>Avoid smoking and alcohol.</li>
+                    <li>Manage stress and get enough sleep.</li>
+                </ul>
+            </div>
+        {% endif %}
+
+        <a href="/">Check Another Prediction</a>
+    </div>
+</body>
+</html>
