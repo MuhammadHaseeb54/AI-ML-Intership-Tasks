@@ -1,0 +1,3 @@
+LangChain is a framework for building LLM-powered applications using composable modules.
+FAISS is a library for efficient similarity search and clustering of dense vectors.
+Streamlit turns Python scripts into shareable web apps.
